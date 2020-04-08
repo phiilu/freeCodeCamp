@@ -1,0 +1,29 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+.form-field {
+  @apply flex flex-col mb-4;
+}
+
+.input-label {
+  @apply text-gray-900 font-bold;
+}
+
+.input-field {
+  @apply mt-2 rounded p-2 text-lg h-12 bg-white;
+}
+
+.input-field:hover {
+  @apply bg-gray-100;
+}
+
+.button {
+  @apply w-full rounded text-center py-4 bg-green-300 text-green-800 uppercase tracking-wider font-bold transition-colors duration-150;
+}
+
+.button:hover {
+  @apply bg-green-400;
+}

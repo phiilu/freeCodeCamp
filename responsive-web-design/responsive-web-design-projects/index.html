@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FCC - Survey Form</title>
+  </head>
+  <body class="antialiased pb-10">
+    <div class="container mx-auto">
+      <header class="text-center px-4 py-10">
+        <h1 id="title" class="text-3xl font-bold text-teal-900">
+          freeCodeCamp Survey Form
+        </h1>
+        <p id="description" class="text-xl italic text-teal-700">
+          Thank you for taking the time to help us improve the platform
+        </p>
+      </header>
+      <form id="survey-form" class="p-8 bg-gray-300 rounded-md">
+        <div class="form-field">
+          <label id="name-label" class="input-label" for="name">Name</label>
+          <input
+            class="input-field"
+            type="text"
+            id="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label id="email-label" class="input-label" for="email">Email:</label>
+          <input
+            class="input-field"
+            type="email"
+            id="email"
+            placeholder="Enter your Email"
+            required
+          />
+        </div>
+
+        <div class="form-field">
+          <label id="number-label" class="input-label" for="number"
+            >Age <small>(optional)</small></label
+          >
+          <input
+            class="input-field"
+            type="number"
+            id="number"
+            placeholder="Age"
+            min="13"
+            max="110"
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="input-label"
+            >Which option best describes your current role?
+          </label>
+          <select name="dropdown" id="dropdown" class="input-field">
+            <option disabled="" selected="" value=""
+              >Select current role</option
+            >
+            <option value="student">Student</option>
+            <option value="fulltime">Full Time Job</option>
+            <option value="parttime">Part Time Job</option>
+          </select>
+        </div>
+
+        <div class="form-field">
+          <label class="input-label">
+            Would you recommend freeCodeCamp to a friend?
+          </label>
+          <div class="flex flex-col">
+            <div class="flex items-center mt-1">
+              <input
+                id="radio-sure"
+                class="mr-2"
+                type="radio"
+                name="recommend"
+                value="sure"
+              />
+              <label for="radio-sure" class="mr-4">Sure</label>
+            </div>
+            <div class="flex items-center mt-1">
+              <input
+                id="radio-maybe"
+                class="mr-2"
+                type="radio"
+                name="recommend"
+                value="maybe"
+                checked
+              />
+              <label for="radio-maybe" class="mr-4">Maybe</label>
+            </div>
+            <div class="flex items-center mt-1">
+              <input
+                id="radio-nope"
+                class="mr-2"
+                type="radio"
+                name="recommend"
+                value="nope"
+              />
+              <label for="radio-nope" class="mr-4">Nope</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="input-label">
+            What would you like to see improved?
+            <small>(Check all that apply)</small>
+          </label>
+          <div class="flex flex-col">
+            <div class="flex items-center mt-1">
+              <input
+                id="checkbox-website"
+                class="mr-2"
+                type="checkbox"
+                name="recommend"
+                value="website"
+              />
+              <label for="checkbox-website" class="mr-4">Website</label>
+            </div>
+            <div class="flex items-center mt-1">
+              <input
+                id="checkbox-videos"
+                class="mr-2"
+                type="checkbox"
+                name="recommend"
+                value="videos"
+                checked
+              />
+              <label for="checkbox-videos" class="mr-4">Videos</label>
+            </div>
+            <div class="flex items-center mt-1">
+              <input
+                id="checkbox-icons"
+                class="mr-2"
+                type="checkbox"
+                name="recommend"
+                value="icons"
+              />
+              <label for="checkbox-icons" class="mr-4">Icons</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label class="input-label">
+            Any comments or suggestions?
+          </label>
+          <textarea
+            class="mt-2 rounded"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </div>
+
+        <button id="submit" class="button" type="submit">
+          Submit
+        </button>
+      </form>
+    </div>
+    <script src="./index.js"></script>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  </body>
+</html>
