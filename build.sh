@@ -1,5 +1,5 @@
 #!/bin/bash
-cd responsive-web-design/build-a-survey-form && npm run build && cd -
+cd responsive-web-design/build-a-survey-form && npm ci && npm run build && cd -
 
 rm -rf public
 
