@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Pacifico&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.quote-svg {
+  top: -30px;
+}
+
+.copyright {
+  left: 0;
+  bottom: 0px;
+  right: 0;
+}
