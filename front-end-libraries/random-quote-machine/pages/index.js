@@ -16,7 +16,6 @@ const colors = [
   'purple',
   'pink'
 ];
-
 const year = new Date().getFullYear();
 
 const Button = ({as, color, children, ...props}) => {
@@ -40,11 +39,10 @@ export default function IndexPage() {
   const handleRandomQuote = () => {
     const index = Math.floor(Math.random() * quotes.length - 1) + 1;
     const colorsIndex = Math.floor(Math.random() * colors.length - 1) + 1;
+
     const randomQuote = quotes[index];
     const randomColor = colors[colorsIndex]; 
-
-    console.log(colorsIndex, randomColor)
-
+    
     setQuote(randomQuote);
     setColor(randomColor);
   }
